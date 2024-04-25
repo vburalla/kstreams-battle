@@ -44,6 +44,8 @@ La firma del método es la siguiente:
 Al igual que mapValues, esta operación sólo cambia el valor del registro original, manteniendo la clave.
 Devuelve un KStream que contiene más o menos registros, con los nuevos valores y la clave sin modificar.
 
+![](static/flatMapValues.png)
+
 La firma del método es la siguiente:
 > <​VR> KStream<K,VR> flatMapValues(ValueMapper<? super V,? extends java.lang.Iterable<? extends ​VR>> mapper)
 
@@ -91,6 +93,14 @@ Retorna el mismo objeto.
 
 Este método realiza una acción en cada mensaje de entrada. No retorna un stream. De hecho, no retorna nada.
 
+### [toStream](https://kafka.apache.org/28/javadoc/org/apache/kafka/streams/kstream/KTable.html#toStream())
+
+Convierte un KTable en un KStream, o lo que es lo mismo, obtiene un changelog de la tabla.
+
+### [repartition](https://kafka.apache.org/28/javadoc/org/apache/kafka/streams/kstream/KStream.html#repartition(org.apache.kafka.streams.kstream.Repartitioned))
+
+Materializa un stream a un tópico auto-generado y crea un nuevo KStream desde el tópico auto-generado. Si no se usa la firma en la que se indica el número de particiones, mantendrá el número de particiones del tópico de origen.
+
 ### [groupByKey]()
 
 Agrupa los registros por su clave y retorna un KGroupedStream que contiene los registros agrupados del KStream original.
@@ -110,13 +120,4 @@ La firma del método es la siguiente:
 
 > La agrupación es un prerrequisito para realizar el agregado de un stream o una tabla y garantiza que los datos están bien particionados para las siguientes operaciones. 
 
-### [toStream](https://kafka.apache.org/28/javadoc/org/apache/kafka/streams/kstream/KTable.html#toStream())
-
-Convierte un KTable en un KStream, o lo que es lo mismo, obtiene un changelog de la tabla.
-
-### [repartition](https://kafka.apache.org/28/javadoc/org/apache/kafka/streams/kstream/KStream.html#repartition(org.apache.kafka.streams.kstream.Repartitioned))
-
-Materializa un stream a un tópico auto-generado y crea un nuevo KStream desde el tópico auto-generado. Si no se usa la firma en la que se indica el número de particiones, mantendrá el número de particiones del tópico de origen.
-
-
-## [VOLVER](kstreams)
+## [VOLVER](readme.md)

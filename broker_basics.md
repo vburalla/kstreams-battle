@@ -13,3 +13,5 @@ Los tópicos a su vez se dividen en particiones, que son las unidades de paralel
 ## Segmentos
 Los tópicos se componen de varios segmentos, que son los ficheros en los que se almacenan los mensajes. Siempre hay un segmento activo que es en el que se están persistiendo los mensajes que están entrando en el momento acutal. 
 Los segmentos tienen un tamaño máximo configurable y cuando se alcanza se crea un nuevo segmento. Los segmentos se van eliminando cuando se alcanza el tiempo/tamaño de retención configurado.
+
+## [VOLVER](readme.md)

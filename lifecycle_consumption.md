@@ -24,4 +24,4 @@ La premisa del reequilibrio es simple y autodescriptiva. Se dice a todos los mie
 
 > ![](static/informacion.png) [Más información acerca de consumer rebalances](https://www.confluent.io/blog/cooperative-rebalancing-in-kafka-streams-consumer-ksqldb/)
 
-## [VOLVER](main.md)
+## [VOLVER](readme.md)

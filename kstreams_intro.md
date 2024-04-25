@@ -56,4 +56,4 @@ Cada tarea puede instanciar sólo una de estas sub-topologías para su procesami
 
 > ![](static/informacion.png) [Más información sobre la arquitectura](https://docs.confluent.io/platform/current/streams/architecture.html)
 
-## [VOLVER](kstreams)
+## [VOLVER](readme.md)

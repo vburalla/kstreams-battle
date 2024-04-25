@@ -65,4 +65,4 @@ Dada esta dualidad la API de Kafka Streams permite realizar operaciones de trans
 
 ![](static/informacion.png)[Más información sobre streams y tablas](https://www.confluent.io/blog/streams-tables-two-sides-same-coin/)
 
-## [VOLVER](kstreams.md)
+## [VOLVER](readme.md)

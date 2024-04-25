@@ -19,4 +19,4 @@ Como curiosidad, una tabla con los tiempos medios de hash y el número de colisi
 
 ![](static/hash_comparative.png)
 
-## [VOLVER](kstreams)
+## [VOLVER](readme.md)
